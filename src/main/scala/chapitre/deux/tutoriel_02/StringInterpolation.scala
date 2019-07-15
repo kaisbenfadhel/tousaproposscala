@@ -1,4 +1,4 @@
-package chapitre.deux.chapitre.deux.tutoriel_02
+package chapitre.deux.tutoriel_02
 
 /**
   * Created By kais BEN FADHEL on 15/07/2019

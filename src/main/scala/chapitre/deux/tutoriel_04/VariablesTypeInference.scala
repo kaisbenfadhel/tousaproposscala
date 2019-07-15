@@ -1,4 +1,4 @@
-package tutoriel_04
+package chapitre.deux.tutoriel_04
 
 /**
   * Created By kais BEN FADHEL on 15/07/2019
@@ -29,7 +29,7 @@ object VariablesTypeInference extends App {
 
   val donutFirstLetter = 'D'
 
-  val nothing = ()
+ // val nothing = ()
 
 
   println("\nEtape 3: Utilisation du compilateur Scala pour convertir un type de données en un autre")
