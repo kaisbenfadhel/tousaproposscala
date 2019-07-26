@@ -1,4 +1,4 @@
-package chapitre.deux.tutoriel_07
+package chapitre.deux.principes.fondamentaux.tutoriel_07
 
 /**
   * Created By kais BEN FADHEL on 25/07/2019
@@ -9,7 +9,6 @@ object Range extends App {
   println("Etape 1: Créer une Rang numérique simple de 1 à 5 inclus")
   val from1To5 = 1 to 5
   println(s"Range de 1 a 5 inclusive = $from1To5")
-
 
 
   println("\nEtape 2: Créer Rang numérique comprise entre 1 et 5, à l'exclusion du dernier nombre entier 5")
