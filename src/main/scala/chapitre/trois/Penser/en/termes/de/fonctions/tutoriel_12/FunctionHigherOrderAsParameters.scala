@@ -17,15 +17,18 @@ object FunctionHigherOrderAsParameters extends App {
     val totalCost = 2.50 * quantity
     totalCost - (totalCost * discount)
   }
+
   println("\nEtape 2: Comment définir une fonction d'ordre supérieur qui prend une autre fonction en paramètre")
+
   //Une fonction d'ordre supérieur est une fonction qui prend une autre fonction en tant que paramètre.
   def totalCostWithDiscountFunctionParameter(donutType: String)(quantity: Int)(f: Double => Double): Double = {
     println(s"Calcul du coût total pour $quantity $donutType")
     val totalCost = 2.50 * quantity
     f(totalCost)
   }
+
   println("\nEtape 3: Comment appeler une fonction d'ordre supérieur et passer une fonction anonyme en paramètre")
-  val totalCostOf5Donuts = totalCostWithDiscountFunctionParameter("Donut glacée")(5){totalCost =>
+  val totalCostOf5Donuts = totalCostWithDiscountFunctionParameter("Donut glacée")(5) { totalCost =>
     val discount = 2 // supposez que vous récupérez le remise de la base de données
     totalCost - discount
   }
@@ -33,10 +36,12 @@ object FunctionHigherOrderAsParameters extends App {
 
 
   println("\nStep 4: Comment définir et passer une fonction à une fonction d'ordre supérieur")
+
   def applyDiscount(totalCost: Double): Double = {
     val discount = 2 // supposez que vous récupérez le remise de la base de données
     totalCost - discount
   }
+
   println(s"Coût total de 5 Donuts glacés avec fonction discount = ${totalCostWithDiscountFunctionParameter("Donut glacée")(5)(applyDiscount(_))}")
 
 
