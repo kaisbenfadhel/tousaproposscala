@@ -34,5 +34,4 @@ object TailRecursiveFunction extends App {
   val notFound = search("Donut Chocolat", arrayDonuts, 0)
   println(s"Recherche Donut Chocolat = $notFound")
 
-
 }
